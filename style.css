@@ -25,10 +25,8 @@ img {
 }
 
 .profil {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	border: solid 2px rgb(213, 212, 212);
+	box-shadow: rgba(102, 206, 250, 0.16) 0px 4px 4px 0px;
 	border-radius: 10px;
 	margin-bottom: 15px;
 	padding: 10px;
@@ -36,6 +34,7 @@ img {
 
 .portret {
 	border-radius: 50%;
+	margin: 0 auto;
 }
 
 .jmeno {
@@ -52,7 +51,7 @@ img {
 	.profil {
 		flex-basis: calc((100% - 15px) / 2);
 		flex-grow: 1;
-		flex-direction: row;
+		display: flex;
 		align-items: flex-start;
 	}
 
@@ -69,14 +68,12 @@ img {
 
 @media screen and (min-width: 960px) {
 	.profil {
-		flex-basis: calc((100% - 45px) / 4);
-		/* flex-grow: 1; */
-		flex-direction: column;
-		align-items: center;
+		flex-basis: calc((100% - 45px) / 4);;
+		display: block;
 	}
 
 	.portret {
-		margin-right: 0px;
+		margin: 0 auto;
 		width: auto;
 	}
 
